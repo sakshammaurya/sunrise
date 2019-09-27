@@ -1,5 +1,5 @@
 banners[0]:
-  title: Summer Essentials
+  title: Summer Essential
   subtitle: Make the great day happen
   linkLabel: Shop collection
   link: /en/men
@@ -29,7 +29,7 @@ banners[3]:
   backgroundImage: /assets/img/cms/shoes-4to3.jpg
 
 banners[4]:
-  title: SUMMER FASHION 2016
+  title: SUMMER FASHION 2019
   headerImage: /assets/img/cms/sun-logo.png
   backgroundImage: /assets/img/cms/blue-bg-4to3.png
 
