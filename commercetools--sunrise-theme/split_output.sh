@@ -2,11 +2,11 @@
 
 if [ "$TRAVIS_REPO_SLUG" == "commercetools/commercetools-sunrise-theme" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ] ; then
 
-    export SPLIT_REPO=https://${GH_TOKEN}@github.com/jayS-de/sunrise-theme
+    export SPLIT_REPO=https://${GH_TOKEN}@github.com/sakshammaurya/sunrise-theme
     export LAST_LOG_ENTRY=`git log --pretty=format:%B -1`
 
-    git config --global user.email "automation@commercetools.de"
-    git config --global user.name "Travis CI"
+    git config --global user.email "sammaurya843@gmail.com"
+    git config --global user.name "sakshammaurya"
 
     grunt build-composer
 
