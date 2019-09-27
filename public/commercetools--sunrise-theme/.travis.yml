@@ -1,0 +1,21 @@
+language: node_js
+node_js: "8.9.1"
+
+before_install:
+  - npm install -g grunt-cli
+  - gem install sass
+
+install:
+  - npm install
+
+script:
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then grunt publish; else grunt build; fi
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then ./split_output.sh; fi
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules

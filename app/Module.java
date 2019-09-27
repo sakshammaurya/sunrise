@@ -121,7 +121,7 @@ public class Module extends AbstractModule {
     @Provides
     @RequestScoped
     public DateTimeFormatter dateTimeFormatter(final Locale locale) {
-        return DateTimeFormatter.ofPattern("MMM d, yyyy", locale);
+        return DateTimeFormatter.ofPattern(" d, yyyy,MMM", locale);
     }
 
     @Provides
